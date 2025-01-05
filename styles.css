@@ -1,125 +1,142 @@
-*{
-    
-}
-html, body{
-    margin: 0;
-    padding: 0;
-    min-height: 200vh;
-    width: 100vw;
-    overflow-x: hidden
-}
 
-header, footer , main {
-    border: 2px solid red;
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 300vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-body{
-    /* margin-left: 15%; */
-    /* width: 1290px; */
-    border: 1px solid blue;
-    display: grid; 
-    grid-template-rows: 1fr 2fr 1fr;
+header,
+footer,
+main {
+  border: 2px solid red;
 }
 
-.background{
-    /* position: relative; */
-   
-    background-color: #0891b2 ;
-    min-height: 100%;
-    min-width: 100%;
-    transform: rotate(352deg) scale(5) translateX(-1%);
-    transform-origin: left bottom;
-}    
-
-header{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: transparent;
+body {
+  /* margin-left: 15%; */
+  /* width: 1290px; */
+  border: 1px solid blue;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr;
 }
 
-header *{
-    background-color:transparent;
-    
+.background {
+  /* position: relative; */
+
+  background-color: #0891b2;
+  min-height: 100%;
+  min-width: 100%;
+  transform: rotate(352deg) scale(5) translateX(-1%);
+  transform-origin: left bottom;
 }
 
-.header-child-2{
-    display: flex;
-    margin-left: -75%;
-    margin-top: 15vh;
-    margin-bottom: 10vh;
-    align-items: center;
-    align-self: flex-start;
-    z-index: 2;
-    background-color: transparent;
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: transparent;
+  margin-bottom: 2rem;
 }
 
-
-img{
-    background-color: transparent;
-    height: auto;
+header * {
+  background-color: transparent;
 }
-img, .wrapper, .background{
-    box-shadow: 1px 1px 1px #afafaf;
-    
+
+.header-child-2 {
+  display: flex;
+  margin-left: -85%;
+  margin-top: 15vh;
+  align-items: center;
+  align-self: flex-start;
+  z-index: 2;
+  background-color: transparent;
+}
+
+img {
+  background-color: transparent;
+  height: auto;
+}
+img,
+.wrapper,
+.background {
+  box-shadow: 3px 3px 3px #afafaf;
 }
 .wrapper {
-    padding: 2vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 35vw;
-    height: 70%;
-    background-color: white;
-}   
-
-.wrapper h1{
-    font-size: larger;
-}
-.wrapper *{
-    margin: 0;
-    padding: 0;
+  padding: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 35vw;
+  height: 70%;
+  background-color: white;
 }
 
-
-.icons{
-    display: flex;
-    flex-grow: 2;
-    justify-content: flex-end;
-    /* padding: 2em; */
+.wrapper h1 {
+  font-size: larger;
+}
+.wrapper * {
+  margin: 0;
+  padding: 0;
 }
 
-.icons svg{
-    height: 3vh;
+.icons {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+  /* padding: 2em; */
 }
 
-main{
-   
+.icons svg {
+  height: 3vh;
 }
 
-.portfolio-itens{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
-    padding: 5rem;
-    gap: 2.5em;
+main {
 }
 
-main h1{
-    padding-left: 5rem;
-    padding-top: 2rem;
-    margin-bottom: -2rem;
+.portfolio-itens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40vh, 1fr));
+  padding: 5rem;
+  padding-top: 0;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  gap: 2.5em;
+  margin-bottom: 2rem;
 }
 
-.card{
-    border: 1px solid green;
-    min-height: 40vh;   
+main h1 {
+  padding-left: 10rem;
+  padding-top: 5rem;
 }
 
-.card-img{
-    height: 60%;
-    width: auto;
-    background-color: #0891b2;
+.card {
+  border: 1px solid green;
+  min-height: 40vh;
+}
+
+.card-img {
+  height: 60%;
+  width: auto;
+  background-color: #0891b2;
+}
+
+.card-labels{
+  display: grid;
+  grid-template-columns:7fr 1fr ;
+  grid-template-rows: 0.25fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+
+}
+.card-labels p{
+  margin-top: -1rem;
+}
+
+.project-icons svg{
+  height: 1.2rem;
 }
