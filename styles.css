@@ -179,6 +179,22 @@ p {
   font-size: var(--fs-small);
 }
 
+.contact-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-wrapper svg {
+  height: 2rem;
+
+}
+
+.contact-wrapper a {
+  font-size: var(--fs-normal);
+  color: #ffffff;
+}
+
 @media (max-width : 1024px) {
   
   .header-content{
@@ -210,4 +226,14 @@ p {
     
   }
   
+  .contact-wrapper{
+    gap: 0.3rem;
+  }
+  
+  .contact-wrapper a {
+    font-size: var(--fs-small);
+    color: #ffffff;
+  }
 }
+
+
