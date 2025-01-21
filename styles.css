@@ -38,7 +38,7 @@ header * {
   background-color: transparent;
 }
 
-.header-child-2 {
+.header-content {
   position: relative;
   display: flex;
   justify-content: center;
@@ -49,17 +49,20 @@ header * {
   background-color: transparent;
 }
 
-.header-child-2 img {
-  height: auto;
-  max-height: 623px;
-}
 
-img,
+.header-content img,
 .wrapper,
 .background,
 .card {
+  box-shadow: -2px 3px 10px #afafaf;
+}
+
+.header-content img {
+  height: auto;
+  max-height: 623px;
   box-shadow: 3px 3px 3px #afafaf;
 }
+
 .wrapper {
   padding: 2vh;
   max-width: 550px;
@@ -99,7 +102,7 @@ img,
   gap:  2.5rem;
   flex-wrap: wrap;
   flex-grow: 0;
-  padding-inline: 10%;
+  padding-inline: 8%;
   margin-bottom: 2rem;
   padding-top: 0;
   gap: 2.5em;
@@ -118,9 +121,11 @@ footer{
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
   min-height: 40vh;
   width: 930px;
-
+  padding-inline: 1rem;
+  
 }
 
 .card img{
@@ -133,21 +138,20 @@ footer{
   max-width: 500px;
 }
 
-.card-labels{
-  display: grid;
-  grid-template-columns:7fr 1fr ;
-  grid-template-rows: 0.25fr 1fr;
-  justify-content: center;
+.card-title{
+  display: flex;
+  min-width: 100%  ;
+  justify-content: space-between;
+  margin-block: 0.5rem;
   align-items: center;
-  padding-inline: 1rem;
-  
 }
-.card-labels p{
-  margin-top: -1rem;
+
+.card-title h2{
+  margin: 0;
 }
 
 .project-icons svg{
-  height: 1.2rem;
+  height: 1.3rem;
 }
 
 footer{
@@ -177,7 +181,7 @@ p {
 
 @media (max-width : 1024px) {
   
-  .header-child-2{
+  .header-content{
     flex-direction: column;
     align-items: center;
   }
@@ -190,7 +194,7 @@ p {
 
 @media (max-width : 400px) {
   
-  .header-child-2{
+  .header-content{
     flex-direction: column;
     align-items: center;
   }
